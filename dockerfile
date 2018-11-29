@@ -1,6 +1,6 @@
 FROM php:7.2-apache-stretch
 
-COPY ./app /app
+COPY ./app/public /app
 COPY ./vhost.conf /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /app
